@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Automated Resume Parser</title><link rel="stylesheet" href="/style.css">
+</head>
+<body><main class="container"><section class="card">
+<h1>📄 Automated Resume Parser</h1>
+<p>Upload a PDF or DOCX resume and extract structured information.</p>
+<form id="resumeForm">
+<label class="upload-box" for="resumeFile"><span>📎 Choose Resume</span><small>PDF or DOCX</small></label>
+<input id="resumeFile" type="file" accept=".pdf,.docx" required>
+<button type="submit">Parse Resume</button>
+</form>
+<p id="status"></p>
+<section id="result" class="result hidden">
+<h2>Extracted Information</h2>
+<div class="grid">
+<div><b>Name</b><p id="name">-</p></div><div><b>Email</b><p id="email">-</p></div>
+<div><b>Phone</b><p id="phone">-</p></div><div><b>LinkedIn</b><p id="linkedin">-</p></div>
+<div><b>GitHub</b><p id="github">-</p></div><div><b>Skills</b><p id="skills">-</p></div>
+</div>
+<h3>Education</h3><pre id="education">-</pre>
+<h3>Experience</h3><pre id="experience">-</pre>
+</section></section></main><script src="/app.js"></script></body></html>
